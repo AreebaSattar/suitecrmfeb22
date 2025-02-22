@@ -61,9 +61,47 @@ $manifest = array (
   'icon' => '',
   'is_uninstallable' => true,
   'name' => 'New_Modules',
-  'published_date' => '2025-02-22 19:06:12',
+  'published_date' => '2025-02-22 19:06:15',
   'type' => 'module',
-  'version' => 1740251173,
+  'version' => 1740251176,
   'remove_tables' => 'prompt',
 );
 
+
+$installdefs = array (
+  'id' => 'New_Modules',
+  'beans' => 
+  array (
+    0 => 
+    array (
+      'module' => 'new_Brands',
+      'class' => 'new_Brands',
+      'path' => 'modules/new_Brands/new_Brands.php',
+      'tab' => true,
+    ),
+  ),
+  'layoutdefs' => 
+  array (
+  ),
+  'relationships' => 
+  array (
+  ),
+  'image_dir' => '<basepath>/icons',
+  'copy' => 
+  array (
+    0 => 
+    array (
+      'from' => '<basepath>/SugarModules/modules/new_Brands',
+      'to' => 'modules/new_Brands',
+    ),
+  ),
+  'language' => 
+  array (
+    0 => 
+    array (
+      'from' => '<basepath>/SugarModules/language/application/en_us.lang.php',
+      'to_module' => 'application',
+      'language' => 'en_us',
+    ),
+  ),
+);
